@@ -1,7 +1,6 @@
 {
-    
     "Sand Crawler": {
-        "imgUrl": "/sandcrawler.webp",
+        "imgUrl": "/Sandcrawler.webp",
         "detailedDescription": "Are you tired of traversing through the vast deserts of Tatooine on foot, or dealing with the hassle of constantly repairing your old, worn-out speeder? Look no further than this sand crawler! The sand crawler, manufactured by Corellia Mining Corp., is the ultimate mode of transportation for desert adventures. With its towering height and sturdy construction, it can traverse even the toughest terrain with ease, from sand dunes to rocky outcroppings. Not only does the sand crawler keep you safe and secure on your journey, but it also has ample storage space for all of your gear and equipment. With multiple levels and compartments, you'll never have to worry about leaving anything behind. And let's not forget about the incredible salvage opportunities that come with a sand crawler. Its advanced sensors and equipment can detect valuable resources and artifacts hidden in the desert, giving you the chance to make a fortune on your expeditions. Investing in a sand crawler isn't just a smart decision for practicality and adventure - it's also a chance to join the legacy of the Jawas, the iconic desert scavengers who have been using these vehicles for generations. Don't miss out on the opportunity to own your own sand crawler and explore the vast deserts of the galaxy in style!",
         "canHaulCargo": "yes",
         "interplanetaryTravel": "no"
@@ -34,5 +33,4 @@
         "canHaulCargo": "yes",
         "interplanetaryTravel": "no"
     }
-
-}   
+}
