@@ -1,0 +1,38 @@
+{
+    
+    "Sand Crawler": {
+        "imgUrl": "/sandcrawler.webp",
+        "detailedDescription": "Are you tired of traversing through the vast deserts of Tatooine on foot, or dealing with the hassle of constantly repairing your old, worn-out speeder? Look no further than this sand crawler! The sand crawler, manufactured by Corellia Mining Corp., is the ultimate mode of transportation for desert adventures. With its towering height and sturdy construction, it can traverse even the toughest terrain with ease, from sand dunes to rocky outcroppings. Not only does the sand crawler keep you safe and secure on your journey, but it also has ample storage space for all of your gear and equipment. With multiple levels and compartments, you'll never have to worry about leaving anything behind. And let's not forget about the incredible salvage opportunities that come with a sand crawler. Its advanced sensors and equipment can detect valuable resources and artifacts hidden in the desert, giving you the chance to make a fortune on your expeditions. Investing in a sand crawler isn't just a smart decision for practicality and adventure - it's also a chance to join the legacy of the Jawas, the iconic desert scavengers who have been using these vehicles for generations. Don't miss out on the opportunity to own your own sand crawler and explore the vast deserts of the galaxy in style!",
+        "canHaulCargo": "yes",
+        "interplanetaryTravel": "no"
+    },
+
+    "T-16 skyhopper": {
+        "imgUrl": "/skyhoppercrop.png",
+        "detailedDescription": "Looking for the ultimate flying experience in the galaxy? Look no further than the T-16 skyhopper! The T-16 skyhopper is a sleek and agile aircraft that can take you to new heights. With its powerful engines and advanced flight controls, you'll feel like you're soaring through the clouds with ease. Whether you're looking to explore new planets, race against other pilots, or just enjoy the thrill of flight, the T-16 skyhopper has everything you need. It's fast, nimble, and responsive, allowing you to perform incredible aerial maneuvers and tricks that will leave your friends and competitors in awe.  But the T-16 skyhopper isn't just a toy - it's also a practical mode of transportation. With its advanced sensors and navigation systems, you can safely navigate through even the most treacherous terrain, from mountain ranges to deep canyons.  And let's not forget about the customization options available for the T-16 skyhopper. With a variety of modifications and upgrades, you can tailor your aircraft to your specific needs and preferences, making it truly your own.  So why settle for boring ground transportation when you can take to the skies in the T-16 skyhopper? It's the ultimate flying experience in the galaxy, and it's waiting for you to take it to new heights!",
+        "canHaulCargo": "no",
+        "interplanetaryTravel": "yes"
+    },
+
+    "X-34 landspeeder": {
+        "imgUrl": "/X-34-TGTB.webp",
+        "detailedDescription": "Looking for a fast and efficient way to get around your planet? With its advanced engines and aerodynamic design, you'll feel like you're flying just inches above the ground. The X-34 landspeeder has everything you need. It's fast, reliable, and easy to maneuver, making it the perfect vehicle for any adventure.  But the X-34 landspeeder isn't just about speed - it's also about style. With its sleek and futuristic design, you'll turn heads wherever you go. And with a variety of customization options available, you can make your X-34 landspeeder truly your own.  So why settle for boring ground transportation when you can ride in style with the X-34 landspeeder? It's the ultimate vehicle for any adventure, and it's waiting for you to take it for a spin!",
+        "canHaulCargo": "no",
+        "interplanetaryTravel": "no"
+    },
+
+    "Storm IV Twin-Pod cloud car": {
+        "imgUrl": "/cloudcarcrop.jpeg",
+        "detailedDescription": "Looking for a vehicle that can take you to new heights? Look no further than the Storm IV Twin-Pod cloud car!  The Storm IV Twin-Pod cloud car is a sleek and agile aircraft that can take you through the clouds and beyond. With its advanced engines and aerodynamic design, you'll feel like you're flying through the skies with ease.  The Storm IV Twin-Pod cloud car has everything you need to enjoy the beauty of the clouds. It's fast, maneuverable, and responsive, allowing you to perform incredible aerial stunts and outmaneuver your opponents.  But the Storm IV Twin-Pod cloud car isn't just a toy - it's also a practical mode of transportation. With its advanced sensors and navigation systems, you can safely navigate through the clouds and avoid obstacles with ease. And with its powerful engines, you can travel long distances quickly and efficiently.  And let's not forget about the unique design of the Storm IV Twin-Pod cloud car. With its distinctive twin-pod design and sleek exterior, you'll turn heads wherever you go. And with a variety of customization options available, you can make your cloud car truly your own.  So why settle for boring ground transportation when you can take to the skies with the Storm IV Twin-Pod cloud car? It's the ultimate aircraft for any adventure, and it's waiting for you to take it to new heights!",
+        "canHaulCargo": "no",
+        "interplanetaryTravel": "yes"
+    },
+
+    "Sail barge": {
+        "imgUrl": "/sailbarge2.jpeg",
+        "detailedDescription": "Looking for the ultimate in luxury and comfort? Look no further than the Modified Luxury Sail Barge! The Modified Luxury Sail Barge is a one-of-a-kind vehicle that combines the power and beauty of a sail barge with the luxury and sophistication of a private yacht. With its spacious interior, elegant furnishings, and state-of-the-art amenities, you'll truly feel like royalty.  Whether you're hosting a party, entertaining guests, or just relaxing in style, the Modified Luxury Sail Barge has everything you need. With its spacious decks, luxurious lounges, and high-tech entertainment systems, you and your guests will never want to leave.  And let's not forget about the practicality of the sail barge. With its advanced sensors and navigation systems, you can safely navigate and avoid obstacles with ease. And with its powerful engines and advanced propulsion systems, you can travel long distances quickly and efficiently.  But what really sets the sail barge apart is its unique design and customization options. With its distinctive red and gold exterior and ornate detailing, it's sure to turn heads wherever you go. And with a variety of customization options available, you can tailor your sail barge to your specific needs and preferences, making it truly your own.  The Modified Luxury Sail Barge is waiting for you to set sail and embark on the adventure of a lifetime!",
+        "canHaulCargo": "yes",
+        "interplanetaryTravel": "no"
+    }
+
+}   
