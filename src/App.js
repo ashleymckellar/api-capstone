@@ -1,49 +1,50 @@
+import React, { useState, createContext, useEffect } from "react";
+import Home from "./components/Home.js";
+import CustomNavbar from "./components/Navbar.js";
+import Footer from "./components/Footer.js";
+import Quiz from "./components/Quiz.js";
+import Details from "./components/Details.js";
+import Inventory from "./components/Inventory.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import VehicleData from "./VehicleData.json";
+import axios from "axios";
+import "./App.css";
+import "./fonts/Starjout.ttf";
 
-import React, { useState, createContext, useEffect } from "react"
-import Home from "./components/Home.js"
-import CustomNavbar from "./components/Navbar.js"
-import Footer from "./components/Footer.js"
-import Quiz from "./components/Quiz.js"
-import Details from "./components/Details.js"
-import Inventory from "./components/Inventory.js"
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import VehicleData from "./VehicleData.json"
-import axios from "axios"
-import './App.css';
-import "./fonts/Starjout.ttf"
-
-export const VehicleContext = createContext()
+export const VehicleContext = createContext();
 
 function App() {
-  const [allVehicles, setAllVehicles] = useState([])
- 
+    const [allVehicles, setAllVehicles] = useState([]);
 
-  useEffect(() => {
-    axios
-        .get("https://swapi.dev/api/vehicles")
-        .then((response) => {
-        const data = response.data.results
-        const vehiclesForSale = data.filter(data => data.cost_in_credits != "unknown").map(data => {
-          return {...data, ...VehicleData[data.name]}
-        })
+    useEffect(() => {
+        document.title = "Pablo's Vehicles";
+    }, []);
 
-        setAllVehicles(vehiclesForSale)
-        
-        
-        console.log("test inventory")
-       
-    }, [])
-    .catch((error) => console.log(error));
+    useEffect(() => {
+        axios
+            .get("https://swapi.dev/api/vehicles")
+            .then((response) => {
+                const data = response.data.results;
+                const vehiclesForSale = data
+                    .filter((data) => data.cost_in_credits != "unknown")
+                    .map((data) => {
+                        return { ...data, ...VehicleData[data.name] };
+                    });
 
-}, [])
+                setAllVehicles(vehiclesForSale);
 
-  return (
-    <div>
-      <VehicleContext.Provider value={{ allVehicles, setAllVehicles }}>
-      <Router>
-      <CustomNavbar />
-        {/* <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                console.log("test inventory");
+            }, [])
+            .catch((error) => console.log(error));
+    }, []);
+
+    return (
+        <div>
+            <VehicleContext.Provider value={{ allVehicles, setAllVehicles }}>
+                <Router>
+                    <CustomNavbar />
+                    {/* <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           {/* <div className="container px-4 px-lg-5">
             <Link to="/" style={{ padding: 5 }} className="navlink">
             Home
@@ -55,23 +56,22 @@ function App() {
             Browse our Inventory
             </Link>
           </div> */}
-        {/* </nav> */}
-        <Routes>
-          <Route path ="/" element={<Home />} />
-          <Route path ="/quiz" element={<Quiz />} />
-          <Route path = "/inventory" element={<Inventory />} />
-          <Route path ="/details/:vehicleName" element={<Details />} />
-        </Routes> 
-      
-      
-      </Router>
-      
-      <Footer />
+                    {/* </nav> */}
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/quiz" element={<Quiz />} />
+                        <Route path="/inventory" element={<Inventory />} />
+                        <Route
+                            path="/details/:vehicleName"
+                            element={<Details />}
+                        />
+                    </Routes>
+                </Router>
 
-      </VehicleContext.Provider>
-    </div>
-  );
+                <Footer />
+            </VehicleContext.Provider>
+        </div>
+    );
 }
-
 
 export default App;
