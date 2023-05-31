@@ -60,6 +60,7 @@ export default function Quiz() {
                 <label className="trade">(10,000 - 300,000)</label>
                 <br></br>
                 <input min ={10000} max={300000} type="range" className="trade" name="price" value={inputData.price} onChange = {handleInputChange}/>{inputData.price}
+                <p className="trade">{inputData.price}</p>
                 <br></br>
                 <br></br>
                 <form onSubmit={handleSubmit}>

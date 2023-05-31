@@ -40,7 +40,7 @@ function App() {
     }, []);
 
     return (
-        <div>
+        <div className="bg-dark">
             <VehicleContext.Provider value={{ allVehicles, setAllVehicles }}>
                 <Router>
                     <CustomNavbar />
