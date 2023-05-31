@@ -53,7 +53,7 @@ export default function Quiz() {
                 Not sure exactly what you're looking for?  Take our quiz and we'll match you up with your dream ride!
                 </h3>
                 <br></br>
-                <img className="img-fluid rounded mx-auto d-block" src="./nalhutta.webp"></img>
+                <img className="img-fluid rounded mx-auto d-block" src="./NalHutta.webp"></img>
                 <br></br>
                 <br></br>
                 <p className="text-center trade">How many credits are you willing to spend?</p>
