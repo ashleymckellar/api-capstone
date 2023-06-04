@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useContext } from "react"
 import { useParams } from "react-router-dom"
+
 import { VehicleContext } from "../App";
 import CustomModal from './Modal'
 
@@ -64,10 +65,10 @@ export default function Details() {
         <h5 className="trade">Cost(credits): {!!foundVehicle && foundVehicle.cost_in_credits}</h5>
         <h5 className="trade">Vehicle Class: {!!foundVehicle && foundVehicle.vehicle_class}</h5>
         <div className="img-container">
-            <img className="img-fluid rounded mx-auto d-block" src={!!foundVehicle && foundVehicle.imgUrl}/>
+            <img className="img-fluid rounded mx-auto d-block details-img" src={!!foundVehicle && foundVehicle.imgUrl} />
         </div>
         <div className="text-center m-2 p-3">
-        <h5 className="trade">{!!foundVehicle && foundVehicle.detailedDescription}</h5>
+        <h5 className="trade custom-home">{!!foundVehicle && foundVehicle.detailedDescription}</h5>
         </div>
         <div className="text-center">
         <button onClick={handleClick}className="btn btn-secondary">This is the vehicle I'm looking for.</button>

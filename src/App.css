@@ -31,10 +31,34 @@ body {
     }
 }
 
-.custom-home {
-    margin: 100px;
+@media (min-width: 576px) and (max-width: 768px){
+    
 }
 
+.custom-home {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+}
+
+.customh5 {
+    min-height: 50px;
+}
+
+.cardsize {
+    height: 204px;
+}
+
+.cardresize {
+    height: 300px;
+}
+
+
+.details-img {
+    height: 375px;
+    width: auto;
+
+}
 @media (max-width: 768px) {
     .custom-home {
         margin-left: 30px;
@@ -83,14 +107,6 @@ body {
     background-image: linear-gradient(purple, purple);
 }
 
-/* .price-range :: -webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
-  background-color: purple;
-  border-radius: 50%;
-  cursor: pointer;
-} */
 
 .warning {
     text-decoration: none;

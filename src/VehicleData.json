@@ -14,14 +14,14 @@
     },
 
     "X-34 landspeeder": {
-        "imgUrl": "/X-34-TGTB.webp",
+        "imgUrl": "/speeder (1).jpg",
         "detailedDescription": "Looking for a fast and efficient way to get around your planet? With its advanced engines and aerodynamic design, you'll feel like you're flying just inches above the ground. The X-34 landspeeder has everything you need. It's fast, reliable, and easy to maneuver, making it the perfect vehicle for any adventure.  But the X-34 landspeeder isn't just about speed - it's also about style. With its sleek and futuristic design, you'll turn heads wherever you go. And with a variety of customization options available, you can make your X-34 landspeeder truly your own.  So why settle for boring ground transportation when you can ride in style with the X-34 landspeeder? It's the ultimate vehicle for any adventure, and it's waiting for you to take it for a spin!",
         "canHaulCargo": "no",
         "interplanetaryTravel": "no"
     },
 
     "Storm IV Twin-Pod cloud car": {
-        "imgUrl": "/cloudcarcrop.jpeg",
+        "imgUrl": "/cloudcarcrop.png",
         "detailedDescription": "Looking for a vehicle that can take you to new heights? Look no further than the Storm IV Twin-Pod cloud car!  The Storm IV Twin-Pod cloud car is a sleek and agile aircraft that can take you through the clouds and beyond. With its advanced engines and aerodynamic design, you'll feel like you're flying through the skies with ease.  The Storm IV Twin-Pod cloud car has everything you need to enjoy the beauty of the clouds. It's fast, maneuverable, and responsive, allowing you to perform incredible aerial stunts and outmaneuver your opponents.  But the Storm IV Twin-Pod cloud car isn't just a toy - it's also a practical mode of transportation. With its advanced sensors and navigation systems, you can safely navigate through the clouds and avoid obstacles with ease. And with its powerful engines, you can travel long distances quickly and efficiently.  And let's not forget about the unique design of the Storm IV Twin-Pod cloud car. With its distinctive twin-pod design and sleek exterior, you'll turn heads wherever you go. And with a variety of customization options available, you can make your cloud car truly your own.  So why settle for boring ground transportation when you can take to the skies with the Storm IV Twin-Pod cloud car? It's the ultimate aircraft for any adventure, and it's waiting for you to take it to new heights!",
         "canHaulCargo": "no",
         "interplanetaryTravel": "yes"

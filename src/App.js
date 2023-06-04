@@ -44,20 +44,7 @@ function App() {
             <VehicleContext.Provider value={{ allVehicles, setAllVehicles }}>
                 <Router>
                     <CustomNavbar />
-                    {/* <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          {/* <div className="container px-4 px-lg-5">
-            <Link to="/" style={{ padding: 5 }} className="navlink">
-            Home
-            </Link>
-            <Link to="/quiz" style={{ padding: 5 }} className="navlink">
-            Which vehicle is right for you?
-            </Link>
-            <Link to="/inventory" style={{ padding: 5 }} className="navlink">
-            Browse our Inventory
-            </Link>
-          </div> */}
-                    {/* </nav> */}
-                    <Routes>
+                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/quiz" element={<Quiz />} />
                         <Route path="/inventory" element={<Inventory />} />

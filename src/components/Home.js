@@ -22,7 +22,7 @@ So whether you're a seasoned pilot or a first-time buyer, come visit us at Pablo
 </div>
 
 
-            <p className="trade">Got some credits burning a hole in your pocket, but not sure where to start?  Take our <a href="/quiz" className="warning">quiz</a> and we'll let you know of our available inventory what we think will be the best match!</p>
+            <p className="trade custom-home">Got some credits burning a hole in your pocket, but not sure where to start?  Take our <a href="/quiz" className="warning">quiz</a> and we'll let you know of our available inventory what we think will be the best match!</p>
             <br></br>
             <p className="trade">I know what I want.  Take me straight to your online <a href="/inventory" className="warning"> showroom. </a></p>
         </div>

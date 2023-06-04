@@ -6,11 +6,11 @@ import Card from "./Card";
 
 export default function Quiz() {
     const navigate = useNavigate()
-    const {allVehicles, setAllVehicles} = useContext(VehicleContext)
+    const {allVehicles} = useContext(VehicleContext)
     const [isSubmitted, setIsSubmitted] = useState(false)
     const [filteredVehicles, setFilteredVehicles] = useState([])
     const [inputData, setInputData] = useState({})
-    const [show, setShow] = useState(false)
+    // const [show, setShow] = useState(false)
     
     
    
@@ -110,8 +110,8 @@ export default function Quiz() {
                )}
 
                 {isSubmitted && filteredVehicles.length > 0 && (
-                    <div className="bg-dark py-5 text-center">{filteredVehicles.map((vehicle, idx) => (
-                        <Card key={vehicle.name} vehicle={vehicle} />
+                    <div className="container px-4 px-lg-5 mt-5">{filteredVehicles.map((vehicle, idx) => (
+                        <Card key={vehicle.name} vehicle={vehicle}/>
                ))}
                     </div>
                )  
