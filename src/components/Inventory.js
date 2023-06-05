@@ -1,18 +1,21 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import Card from "./Card";
 import { VehicleContext } from "../App";
 export default function Inventory(props) {
 
     const {allVehicles} = useContext(VehicleContext)
+    //allVehicles is provided from App.js
     console.log(allVehicles)
     
-    const navigate = useNavigate();
+    //maps over all vehicles, which is the filtered vehicles saved in state, and creates a card for reach,
+    //which has the vehicle name and all the properties from the vehicle object
+    //renders all the cards below
+
     const cards = allVehicles.map((vehicle, idx) => {
   
         return (
-    
+            //props passed to card component
         <Card 
             key={vehicle.name}
             vehicle={vehicle}

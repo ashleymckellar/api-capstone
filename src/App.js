@@ -30,14 +30,16 @@ function App() {
                     .filter((data) => data.cost_in_credits != "unknown")
                     .map((data) => {
                         return { ...data, ...VehicleData[data.name] };
+                        //spreads in data from json file into the array
                     });
-
-                setAllVehicles(vehiclesForSale);
-
-                console.log("test inventory");
-            }, [])
+                    setAllVehicles(vehiclesForSale);
+            })
             .catch((error) => console.log(error));
     }, []);
+
+    //gets all vehicles from first page and filters out the ones without a price in credits.  Save this array as vehiclesForSale
+//setAllVehicles is called on vehiclesForSale, which saves it to state variable, allVehicles
+//useEffect empty array as dependency means it will only be called on the first render
 
     return (
         <div className="bg-dark">

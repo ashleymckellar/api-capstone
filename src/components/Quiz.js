@@ -1,19 +1,14 @@
 import React from "react"
-import { useNavigate } from "react-router-dom"
 import { useState, useContext } from "react";
 import { VehicleContext } from "../App";
 import Card from "./Card";
 
 export default function Quiz() {
-    const navigate = useNavigate()
     const {allVehicles} = useContext(VehicleContext)
     const [isSubmitted, setIsSubmitted] = useState(false)
     const [filteredVehicles, setFilteredVehicles] = useState([])
     const [inputData, setInputData] = useState({})
-    // const [show, setShow] = useState(false)
     
-    
-   
     const handleInputChange = (e) => {
         setInputData((prevData) => ({...prevData, [e.target.name]: e.target.value}))
        }
@@ -22,15 +17,12 @@ export default function Quiz() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        console.log(inputData)
         const filteredVehicles = allVehicles.filter((vehicle) => {
-        console.log(vehicle)
 
-        const isInCost =    vehicle.cost_in_credits <= inputData.price
-        const canHaulCargo = vehicle.canHaulCargo === inputData.cargo
-        const canTravel = vehicle.interplanetaryTravel === inputData.travel
-        return isInCost && canHaulCargo && canTravel
+            const isInCost =    vehicle.cost_in_credits <= inputData.price
+            const canHaulCargo = vehicle.canHaulCargo === inputData.cargo
+            const canTravel = vehicle.interplanetaryTravel === inputData.travel
+            return isInCost && canHaulCargo && canTravel
         })
         
         setFilteredVehicles(filteredVehicles)
@@ -38,10 +30,6 @@ export default function Quiz() {
         
         
     }
-        console.log(filteredVehicles)
-        console.log(isSubmitted)
-
-        console.log(inputData)
 
 
     const isDisabled = !(inputData.price && inputData.cargo && inputData.travel)
@@ -116,7 +104,7 @@ export default function Quiz() {
                     </div>
                )  
                         
-                    }
+            }
             
         </div>
         

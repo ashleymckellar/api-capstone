@@ -5,6 +5,8 @@ export default function Card(props) {
 
 const navigate =useNavigate()
 
+//renders card with api data and sets route to the details page of the vehicle from the card/button that is clicked
+
 
 return (
     

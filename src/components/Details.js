@@ -1,9 +1,7 @@
 import React, { useEffect, useState, useContext } from "react"
 import { useParams } from "react-router-dom"
-
 import { VehicleContext } from "../App";
 import CustomModal from './Modal'
-
 
 export default function Details() {
     const { vehicleName } = useParams()
@@ -15,19 +13,11 @@ export default function Details() {
         name: "",
         holo: ""
     })
-    const [isEnabled, setIsEnabled] = useState(true)
+    
 
     const handleChange = (e) => {
         setFormData((prevFormData) => ({...prevFormData, [e.target.name]: e.target.value}))
-        setIsEnabled(validatePhone())
         
-    }
-
-    console.log(formData)
-
-    const validatePhone = () => {
-        const regex = /^[^0-9]+$/;
-        return regex.test(formData.holo)
         
     }
 
@@ -50,11 +40,17 @@ export default function Details() {
 
     }, [allVehicles, setFoundVehicle])
 
+    //this finds the vehicle that matches the name from the route, calls setFoundVehicle on it
+    //this function will run any time all vehicles change, it calls setFoundVehicle
+
 
     const handleClick = () => {
         setShowForm(true)
     }
     const regex = /^[0-9]+$/;
+
+ //regex form validation for holo number, to ensure only a number is entered.  If letters are entered, submit button
+    //remains greyed out
         
     const isDisabled = !(formData.name && formData.holo && regex.test(formData.holo))
    
@@ -73,7 +69,7 @@ export default function Details() {
         <div className="text-center">
         <button onClick={handleClick}className="btn btn-secondary">This is the vehicle I'm looking for.</button>
         
-        {showForm? (
+        {showForm ? (
             <form className="py-3">
                 <label className="trade">
                     Name:
